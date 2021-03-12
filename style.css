@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --color-primary-magenta: hsl(300, 43%, 22%);
+  --color-primary-pink: hsl(333, 80%, 67%);
+  --color-secondary-dark-magenta: hsl(303, 10%, 53%);
+  --color-secondary-light-magenta: hsl(300, 24%, 96%);
+  --color-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: url(/images/bg-pattern-bottom-desktop.svg); */
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 2;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#main {
+  color: var(--color-primary-magenta);
+  width: 40%;
+  margin: 0 7rem 4rem 0;
+}
+
+#main h1 {
+  line-height: 4rem;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+#main p {
+  line-height: 1.5rem;
+}
+
+#ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  margin: 3rem auto;
+}
+
+#reviews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+  font-weight: 700;
+  color: var(--color-primary-magenta);
+  margin: 0 0 4.5rem 0;
+}
+
+.rating:nth-child(2) {
+  margin-left: 3rem;
+}
+
+.rating:nth-child(3) {
+  margin-left: 6rem;
+}
+
+.rating .stars {
+  margin-right: 2rem;
+}
+
+.rating .stars .star {
+  margin-right: 0.5rem;
+}
+
+.review__card {
+  background-color: var(--color-primary-magenta);
+  width: 32%;
+  padding: 2rem;
+  color: var(--color-white);
+  border-radius: 10px;
+  line-height: 1.5rem;
+}
+
+.reviewer {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.reviewer .reviewer__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+}
+
+.reviewer .reviewer__img img {
+  width: 100%;
+}
+
+.reviewer .reviewer__info .reviewer__name {
+  font-weight: 700;
+}
+
+.reviewer .reviewer__info .reviewer__desc {
+  font-weight: 400;
+  color: var(--color-primary-pink);
+}
+
+.review-text {
+  color: var(--color-secondary-light-magenta);
+}
