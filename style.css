@@ -139,3 +139,102 @@ h1 {
 .review-text {
   color: var(--color-secondary-light-magenta);
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    text-align: center;
+    height: 100vh;
+    font-size: 0.8rem;
+    background-size: max(30%, 375px);
+  }
+
+  #wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  #main {
+    margin: 2rem 2rem 0;
+    padding: 1rem;
+    width: 80%;
+    height: 100%;
+  }
+
+  #main h1 {
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  #main p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  #main h1,
+  #main p {
+    width: ;
+  }
+
+  #ratings {
+    margin: 1rem 2rem;
+  }
+
+  .rating {
+    margin: 0 auto 15px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .rating:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .rating:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .rating .stars {
+    margin: 0 auto;
+  }
+
+  .rating .star {
+    margin: 0.2rem;
+  }
+
+  .rating span {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+
+  #reviews {
+    flex-direction: column;
+    margin: 0 2rem 4rem;
+    font-size: 0.7rem;
+  }
+
+  .review__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .review__card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .review__card:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .review__text {
+    text-align: left;
+    line-height: 1.8;
+  }
+}
